@@ -1,0 +1,8 @@
+libsql
+feedparser
+requests
+python-dateutil
+google-genai
+cloudinary
+python-dotenv
+pillow

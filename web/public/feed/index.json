@@ -1,0 +1,36 @@
+[
+  {
+    "id": "a1b1b6f7-144f-4024-b779-2be34e3ced8e",
+    "title": "OpenAI Announces GPT-5: 10x Faster with Multimodal Reasoning",
+    "link": "https://example.com/gpt5-announcement",
+    "published": "2026-01-28T00:19:40.180806",
+    "summary": "OpenAI today unveiled GPT-5, featuring groundbreaking improvements in speed and multimodal capabilities. The new model processes 10 million tokens per second, 10x faster than GPT-4, and demonstrates advanced reasoning across text, images, and audio simultaneously. The release includes a new architecture that reduces inference costs by 50% while maintaining state-of-the-art performance across all benchmarks.",
+    "source": "AI News",
+    "fetched_at": "2026-01-28T00:19:40.180806",
+    "analysis": {
+      "relevance_score": 10,
+      "category": "Model Release",
+      "infographic_worthy": true,
+      "reasoning": "Major model release from leading AI lab with significant performance improvements"
+    },
+    "facts": {
+      "headline": "GPT-5: 10x Faster Multimodal AI",
+      "key_stats": [
+        "10M tokens/sec",
+        "10x faster than GPT-4",
+        "50% cost reduction"
+      ],
+      "entities": [
+        "OpenAI",
+        "GPT-5"
+      ],
+      "simple_explanation": "OpenAI's new GPT-5 model is 10 times faster than its predecessor and can understand text, images, and audio together, while costing half as much to run.",
+      "visual_concepts": [
+        "Speed comparison bar chart: GPT-4 vs GPT-5",
+        "Cost reduction visualization",
+        "Multimodal capabilities diagram"
+      ]
+    },
+    "image_url": null
+  }
+]

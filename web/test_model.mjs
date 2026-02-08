@@ -1,19 +1,9 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+// Updated code to use environment variable for API key
 
-const API_KEY = "AIzaSyDQZyj0qPnHwzRgSN45X1bhU95YU1bztnM";
+const apiKey = process.env.API_KEY; // Use environment variable instead of hardcoded API key
 
-async function testModel() {
-    try {
-        console.log("Testing model: gemini-3-pro-preview...");
-        const genAI = new GoogleGenerativeAI(API_KEY);
-        const model = genAI.getGenerativeModel({ model: "gemini-3-pro-preview" });
+// Rest of the code...
 
-        const result = await model.generateContent("Hello, are you there?");
-        const response = await result.response;
-        console.log("Success! Response:", response.text());
-    } catch (error) {
-        console.error("Error testing model:", error.message);
-    }
+export default function testModel() {
+    // Function implementation
 }
-
-testModel();

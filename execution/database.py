@@ -70,6 +70,7 @@ def init_db():
             published TEXT,
             fetched_at TEXT,
             status TEXT DEFAULT 'ingested',
+            headline TEXT,
             analysis_json TEXT,
             facts_json TEXT,
             image_path TEXT,

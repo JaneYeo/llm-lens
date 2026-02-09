@@ -37,6 +37,7 @@ export default function DashboardPage() {
         "Wired AI",
         "Guardian AI",
         "The Verge - AI",
+        "ArXiv CS.AI",
         "r/OpenAI",
         "r/MachineLearning",
         "r/LocalLLaMA",

@@ -33,6 +33,11 @@ RSS_FEEDS = [
     {
         "name": "The Verge - AI",
         "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+    },
+    {
+        "name": "ArXiv CS.AI",
+        "url": "http://export.arxiv.org/api/query?search_query=cat:cs.AI&sortBy=lastUpdatedDate&sortOrder=descending&max_results=10",
+        "limit": 5  # Only take top 5 papers per run
     }
 ]
 
@@ -146,6 +151,12 @@ def main():
     print("\n[RSS FEEDS]:")
     for feed_config in RSS_FEEDS:
         entries = fetch_feed(feed_config)
+        
+        # Apply limit if it exists (e.g., for ArXiv)
+        if "limit" in feed_config:
+            print(f"  Filtering to top {feed_config['limit']} entries (Quality Control)")
+            entries = entries[:feed_config['limit']]
+
         for entry in entries:
             if save_entry(entry, feed_config['name']):
                 total_saved += 1
